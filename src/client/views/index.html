@@ -92,7 +92,7 @@
             </h2>
 
             <i class="weather__icon icon__result fas fa-cloud-sun"></i>
-            <h2>
+            <h2 class="weather__name text__result">
               The weather will be: <span id="temp"> 200C </span> &#176; F,
             </h2>
 
@@ -104,10 +104,22 @@
     </main>
 
     <!-- FOOTER ZONE  -->
-    <footer class="footer">
+    <footer class="footer__treker">
       <div class="footer__copyright">
         <p class="copy__text">Star-Treker plan your trip now &copy;</p>
       </div>
     </footer>
+
+    <!-- SERVICE WORKER ZONE -->
+
+    <!-- <script>
+      // Check that service workers are supported
+      if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js');
+        });
+      }
+    </script> -->
   </body>
 </html>
