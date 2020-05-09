@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treker Travel Planner App | Dig it</title>
+  </head>
+  <body>
+    <!-- TREKER HEADER ZONE 1 -->
+
+    <header class="header__treker">
+      <nav class="navbar__treker--sec">
+        <a class="navbar__logo--treker" href="#planner__treker">
+          <img
+            class="logo__image--treker"
+            src="./img/transport.png"
+            alt="treker logo image"
+          />
+        </a>
+        <h2 class="navbar__brand--treker">Star-Treker</h2>
+        <ul class="navbar__menu--zone">
+          <li class="navbar__list">
+            <a href="https://www.expedia.com/Hotels" target="_blank"
+              >Find hotel</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- PLANNER TREKER SECTION -->
+
+      <section
+        id="planner__treker"
+        class="section__treker section__planner--treker"
+      >
+        <div class="container planner__form--treker">
+          <form class="form__content--treker" id="form">
+            <h2 class="form__heading--treker">Set your destination</h2>
+            <input
+              type="text"
+              class="form__input input__from"
+              name="from"
+              placeholder="Blasting off from..."
+              autocomplete="off"
+              required
+            />
+            <input
+              type="text"
+              class="form__input input__to"
+              name="to"
+              placeholder="Will be landing in..."
+              autocomplete="off"
+              required
+            />
+            <label class="date__label" for="date">Heading out on...</label>
+            <input
+              type="date"
+              class="form__input input__date"
+              name="date"
+              required
+            />
+            <input
+              type="submit"
+              class="input__submit"
+              name="submit"
+              value="GO"
+            />
+          </form>
+        </div>
+      </section>
+
+      <!-- RESULTS ZONE -->
+
+      <section id="results__treker" class="section section__result hide">
+        <div class="container results">
+          <div class="result__image--treker">
+            <img src="#" alt="travel city image" id="pixabayImage" />
+          </div>
+          <div class="result__content--treker">
+            <i class="city__icon icon__result fas fa-city"></i>
+            <h2 class="city__name text__result">
+              Your destination is: <span id="city"></span>
+            </h2>
+            <i class="date__icon icon__result fas fa-calendar"></i>
+            <h2 class="date__name text__result">
+              Blasting off on: <span id="date">DD/MM/YYYY</span>
+            </h2>
+
+            <i class="days__icon icon__result fas fa-passport"></i>
+            <h2 class="days__name text__result">
+              You will be: <span id="days"> NUM </span> days away
+            </h2>
+
+            <i class="weather__icon icon__result fas fa-cloud-sun"></i>
+            <h2>The weather will be: <span id="temp">200C</span>$#176; F,</h2>
+
+            <a class="button button__save" id="save" href="#">Print</a>
+            <a class="button button__delete" id="delete" href="#">Delete</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER ZONE  -->
+    <footer class="footer">
+      <div class="footer__copyright">
+        <p class="copy__text">Star-Treker&copy;</p>
+      </div>
+    </footer>
+  </body>
+</html>
