@@ -34,7 +34,7 @@ function loadInfo(req, res) {
 
 // Setup Server
 
-const port = 3030;
+const port = 3000;
 const server = app.listen(port, listening);
 
 function listening() {
