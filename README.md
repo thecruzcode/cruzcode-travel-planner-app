@@ -16,6 +16,7 @@ The goal was to build an application that helps users create their future trip. 
 * The can print the trip and/or export to PDF
 * Allow the traveler to remove the trip
 * Incorporate icons when the weather is displayed
+* Fully responsive app
 
 
 ##### To get HIker working
